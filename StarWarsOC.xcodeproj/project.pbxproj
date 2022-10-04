@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80B7015828E61A9700027760 /* MenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015728E61A9700027760 /* MenuViewModel.m */; };
+		80B7015E28E61E4B00027760 /* StatusRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015D28E61E4B00027760 /* StatusRequest.m */; };
+		80B7016A28E791DE00027760 /* MenuRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7016928E791DE00027760 /* MenuRepository.m */; };
+		80B7016D28E7993800027760 /* MenuLoadDataUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7016C28E7993800027760 /* MenuLoadDataUseCase.m */; };
+		80B7017128E79F5200027760 /* MenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7017028E79F5200027760 /* MenuData.m */; };
+		80B7017928EB73F800027760 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7017828EB73F800027760 /* ListViewController.m */; };
+		80B7017C28EB8BD800027760 /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7017B28EB8BD800027760 /* ListViewCell.m */; };
+		80B7017F28EB8C1600027760 /* ListsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7017E28EB8C1600027760 /* ListsViewModel.m */; };
+		80B7018228EB8FC700027760 /* ListLoadDataUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7018128EB8FC700027760 /* ListLoadDataUseCase.m */; };
+		80B7018528EB903F00027760 /* FilmsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7018428EB903F00027760 /* FilmsRepository.m */; };
+		80B7018C28EC866900027760 /* SpeciesRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7018B28EC866900027760 /* SpeciesRepository.m */; };
+		80B7019328EC8EBE00027760 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7019228EC8EBE00027760 /* ListItem.m */; };
+		80BB00E328E3A5E60065E742 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB00E228E3A5E60065E742 /* AppDelegate.m */; };
+		80BB00E628E3A5E60065E742 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB00E528E3A5E60065E742 /* SceneDelegate.m */; };
+		80BB00EE28E3A5E90065E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB00ED28E3A5E90065E742 /* Assets.xcassets */; };
+		80BB00F128E3A5E90065E742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BB00EF28E3A5E90065E742 /* LaunchScreen.storyboard */; };
+		80BB00F428E3A5E90065E742 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB00F328E3A5E90065E742 /* main.m */; };
+		80BB00FE28E3A5E90065E742 /* PokeOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB00FD28E3A5E90065E742 /* PokeOCTests.m */; };
+		80BB012128E3AD8C0065E742 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB012028E3AD8C0065E742 /* HomeViewController.m */; };
+		80BB012528E3B2FE0065E742 /* AppFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB012428E3B2FE0065E742 /* AppFactory.m */; };
+		80BB012928E4AEC30065E742 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB012828E4AEC30065E742 /* MenuViewController.m */; };
+		80BB012C28E4B1390065E742 /* MenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB012B28E4B1390065E742 /* MenuViewCell.m */; };
+		80BB013128E502010065E742 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB013028E502010065E742 /* ApiClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80BB00FA28E3A5E90065E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80BB00D628E3A5E60065E742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80BB00DD28E3A5E60065E742;
+			remoteInfo = PokeOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80B7015628E61A9700027760 /* MenuViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewModel.h; sourceTree = "<group>"; };
+		80B7015728E61A9700027760 /* MenuViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewModel.m; sourceTree = "<group>"; };
+		80B7015C28E61E4B00027760 /* StatusRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusRequest.h; sourceTree = "<group>"; };
+		80B7015D28E61E4B00027760 /* StatusRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusRequest.m; sourceTree = "<group>"; };
+		80B7016828E791DE00027760 /* MenuRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuRepository.h; sourceTree = "<group>"; };
+		80B7016928E791DE00027760 /* MenuRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuRepository.m; sourceTree = "<group>"; };
+		80B7016B28E7993800027760 /* MenuLoadDataUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuLoadDataUseCase.h; sourceTree = "<group>"; };
+		80B7016C28E7993800027760 /* MenuLoadDataUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuLoadDataUseCase.m; sourceTree = "<group>"; };
+		80B7016F28E79F5200027760 /* MenuData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuData.h; sourceTree = "<group>"; };
+		80B7017028E79F5200027760 /* MenuData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuData.m; sourceTree = "<group>"; };
+		80B7017728EB73F800027760 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		80B7017828EB73F800027760 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		80B7017A28EB8BD800027760 /* ListViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		80B7017B28EB8BD800027760 /* ListViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
+		80B7017D28EB8C1600027760 /* ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewModel.h; sourceTree = "<group>"; };
+		80B7017E28EB8C1600027760 /* ListsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListsViewModel.m; sourceTree = "<group>"; };
+		80B7018028EB8FC700027760 /* ListLoadDataUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLoadDataUseCase.h; sourceTree = "<group>"; };
+		80B7018128EB8FC700027760 /* ListLoadDataUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoadDataUseCase.m; sourceTree = "<group>"; };
+		80B7018328EB903F00027760 /* FilmsRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmsRepository.h; sourceTree = "<group>"; };
+		80B7018428EB903F00027760 /* FilmsRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmsRepository.m; sourceTree = "<group>"; };
+		80B7018628EB945700027760 /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		80B7018A28EC866900027760 /* SpeciesRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeciesRepository.h; sourceTree = "<group>"; };
+		80B7018B28EC866900027760 /* SpeciesRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeciesRepository.m; sourceTree = "<group>"; };
+		80B7018E28EC878100027760 /* FetchRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchRepository.h; sourceTree = "<group>"; };
+		80B7019228EC8EBE00027760 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		80BB00DE28E3A5E60065E742 /* StarWarsOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BB00E128E3A5E60065E742 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80BB00E228E3A5E60065E742 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80BB00E428E3A5E60065E742 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		80BB00E528E3A5E60065E742 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		80BB00ED28E3A5E90065E742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80BB00F028E3A5E90065E742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80BB00F228E3A5E90065E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BB00F328E3A5E90065E742 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80BB00F928E3A5E90065E742 /* StarWarsOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BB00FD28E3A5E90065E742 /* PokeOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokeOCTests.m; sourceTree = "<group>"; };
+		80BB011F28E3AD8C0065E742 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		80BB012028E3AD8C0065E742 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		80BB012328E3B2FE0065E742 /* AppFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFactory.h; sourceTree = "<group>"; };
+		80BB012428E3B2FE0065E742 /* AppFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFactory.m; sourceTree = "<group>"; };
+		80BB012728E4AEC30065E742 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		80BB012828E4AEC30065E742 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		80BB012A28E4B1390065E742 /* MenuViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewCell.h; sourceTree = "<group>"; };
+		80BB012B28E4B1390065E742 /* MenuViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewCell.m; sourceTree = "<group>"; };
+		80BB012F28E502010065E742 /* ApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
+		80BB013028E502010065E742 /* ApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80BB00DB28E3A5E60065E742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80BB00F628E3A5E90065E742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80B7015428E61A6500027760 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				80BB012728E4AEC30065E742 /* MenuViewController.h */,
+				80BB012828E4AEC30065E742 /* MenuViewController.m */,
+				80BB012A28E4B1390065E742 /* MenuViewCell.h */,
+				80BB012B28E4B1390065E742 /* MenuViewCell.m */,
+				80B7015628E61A9700027760 /* MenuViewModel.h */,
+				80B7015728E61A9700027760 /* MenuViewModel.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		80B7015528E61A7400027760 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				80B7016B28E7993800027760 /* MenuLoadDataUseCase.h */,
+				80B7016C28E7993800027760 /* MenuLoadDataUseCase.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		80B7016628E7919100027760 /* StatusRequest */ = {
+			isa = PBXGroup;
+			children = (
+				80B7015C28E61E4B00027760 /* StatusRequest.h */,
+				80B7015D28E61E4B00027760 /* StatusRequest.m */,
+			);
+			path = StatusRequest;
+			sourceTree = "<group>";
+		};
+		80B7016728E791B700027760 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				80B7016828E791DE00027760 /* MenuRepository.h */,
+				80B7016928E791DE00027760 /* MenuRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		80B7016E28E79F3B00027760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80B7016F28E79F5200027760 /* MenuData.h */,
+				80B7017028E79F5200027760 /* MenuData.m */,
+				80B7018628EB945700027760 /* ListItem.h */,
+				80B7019228EC8EBE00027760 /* ListItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80B7017228EB738E00027760 /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				80B7017628EB73D800027760 /* Repository */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		80B7017328EB73C100027760 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				80B7017728EB73F800027760 /* ListViewController.h */,
+				80B7017828EB73F800027760 /* ListViewController.m */,
+				80B7017A28EB8BD800027760 /* ListViewCell.h */,
+				80B7017B28EB8BD800027760 /* ListViewCell.m */,
+				80B7017D28EB8C1600027760 /* ListViewModel.h */,
+				80B7017E28EB8C1600027760 /* ListsViewModel.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		80B7017528EB73D100027760 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				80B7018028EB8FC700027760 /* ListLoadDataUseCase.h */,
+				80B7018128EB8FC700027760 /* ListLoadDataUseCase.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		80B7017628EB73D800027760 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				80B7018328EB903F00027760 /* FilmsRepository.h */,
+				80B7018428EB903F00027760 /* FilmsRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		80B7018928EC835E00027760 /* Species */ = {
+			isa = PBXGroup;
+			children = (
+				80B7018A28EC866900027760 /* SpeciesRepository.h */,
+				80B7018B28EC866900027760 /* SpeciesRepository.m */,
+			);
+			path = Species;
+			sourceTree = "<group>";
+		};
+		80B7018D28EC876D00027760 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80B7018E28EC878100027760 /* FetchRepository.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80B7019428EC8F1600027760 /* People */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		80B7019828EC901E00027760 /* Starships */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Starships;
+			sourceTree = "<group>";
+		};
+		80B7019C28EC90FA00027760 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		80B7019D28EC910C00027760 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		80BB00D528E3A5E60065E742 = {
+			isa = PBXGroup;
+			children = (
+				80BB00E028E3A5E60065E742 /* StarWarsOC */,
+				80BB00FC28E3A5E90065E742 /* StarWarsOCTests */,
+				80BB00DF28E3A5E60065E742 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80BB00DF28E3A5E60065E742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80BB00DE28E3A5E60065E742 /* StarWarsOC.app */,
+				80BB00F928E3A5E90065E742 /* StarWarsOCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80BB00E028E3A5E60065E742 /* StarWarsOC */ = {
+			isa = PBXGroup;
+			children = (
+				80BB011628E3A72C0065E742 /* App */,
+				80BB00F228E3A5E90065E742 /* Info.plist */,
+			);
+			path = StarWarsOC;
+			sourceTree = "<group>";
+		};
+		80BB00FC28E3A5E90065E742 /* StarWarsOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				80BB00FD28E3A5E90065E742 /* PokeOCTests.m */,
+			);
+			path = StarWarsOCTests;
+			sourceTree = "<group>";
+		};
+		80BB011628E3A72C0065E742 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80BB011B28E3A7560065E742 /* Resources */,
+				80BB011A28E3A74F0065E742 /* Common */,
+				80BB011928E3A7450065E742 /* MainModule */,
+				80BB011828E3A73E0065E742 /* Networking */,
+				80BB011728E3A7320065E742 /* ScreenModules */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80BB011728E3A7320065E742 /* ScreenModules */ = {
+			isa = PBXGroup;
+			children = (
+				80B7019D28EC910C00027760 /* Planets */,
+				80B7019C28EC90FA00027760 /* Vehicles */,
+				80B7019828EC901E00027760 /* Starships */,
+				80B7019428EC8F1600027760 /* People */,
+				80B7018928EC835E00027760 /* Species */,
+				80B7017228EB738E00027760 /* Films */,
+				80BB012628E4AEAB0065E742 /* Menu */,
+				80BB011E28E3AAD80065E742 /* Launcher */,
+				80BB011D28E3AACA0065E742 /* Home */,
+			);
+			path = ScreenModules;
+			sourceTree = "<group>";
+		};
+		80BB011828E3A73E0065E742 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				80BB012F28E502010065E742 /* ApiClient.h */,
+				80BB013028E502010065E742 /* ApiClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		80BB011928E3A7450065E742 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				80BB012228E3B2E10065E742 /* Factories */,
+				80BB011C28E3A77F0065E742 /* SuportingFiles */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		80BB011A28E3A74F0065E742 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80B7017328EB73C100027760 /* Presentation */,
+				80B7017528EB73D100027760 /* Domain */,
+				80B7018D28EC876D00027760 /* Protocols */,
+				80B7016E28E79F3B00027760 /* Model */,
+				80B7016628E7919100027760 /* StatusRequest */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		80BB011B28E3A7560065E742 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80BB00ED28E3A5E90065E742 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80BB011C28E3A77F0065E742 /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				80BB00F328E3A5E90065E742 /* main.m */,
+				80BB00E428E3A5E60065E742 /* SceneDelegate.h */,
+				80BB00E528E3A5E60065E742 /* SceneDelegate.m */,
+				80BB00E128E3A5E60065E742 /* AppDelegate.h */,
+				80BB00E228E3A5E60065E742 /* AppDelegate.m */,
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		80BB011D28E3AACA0065E742 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				80BB011F28E3AD8C0065E742 /* HomeViewController.h */,
+				80BB012028E3AD8C0065E742 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		80BB011E28E3AAD80065E742 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				80BB00EF28E3A5E90065E742 /* LaunchScreen.storyboard */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		80BB012228E3B2E10065E742 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				80BB012328E3B2FE0065E742 /* AppFactory.h */,
+				80BB012428E3B2FE0065E742 /* AppFactory.m */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		80BB012628E4AEAB0065E742 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				80B7016728E791B700027760 /* Repository */,
+				80B7015528E61A7400027760 /* Domain */,
+				80B7015428E61A6500027760 /* Presentation */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80BB00DD28E3A5E60065E742 /* StarWarsOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BB010D28E3A5EA0065E742 /* Build configuration list for PBXNativeTarget "StarWarsOC" */;
+			buildPhases = (
+				80BB00DA28E3A5E60065E742 /* Sources */,
+				80BB00DB28E3A5E60065E742 /* Frameworks */,
+				80BB00DC28E3A5E60065E742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsOC;
+			productName = PokeOC;
+			productReference = 80BB00DE28E3A5E60065E742 /* StarWarsOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80BB00F828E3A5E90065E742 /* StarWarsOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BB011028E3A5EA0065E742 /* Build configuration list for PBXNativeTarget "StarWarsOCTests" */;
+			buildPhases = (
+				80BB00F528E3A5E90065E742 /* Sources */,
+				80BB00F628E3A5E90065E742 /* Frameworks */,
+				80BB00F728E3A5E90065E742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80BB00FB28E3A5E90065E742 /* PBXTargetDependency */,
+			);
+			name = StarWarsOCTests;
+			productName = PokeOCTests;
+			productReference = 80BB00F928E3A5E90065E742 /* StarWarsOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80BB00D628E3A5E60065E742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					80BB00DD28E3A5E60065E742 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					80BB00F828E3A5E90065E742 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 80BB00DD28E3A5E60065E742;
+					};
+				};
+			};
+			buildConfigurationList = 80BB00D928E3A5E60065E742 /* Build configuration list for PBXProject "StarWarsOC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80BB00D528E3A5E60065E742;
+			productRefGroup = 80BB00DF28E3A5E60065E742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80BB00DD28E3A5E60065E742 /* StarWarsOC */,
+				80BB00F828E3A5E90065E742 /* StarWarsOCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80BB00DC28E3A5E60065E742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB00F128E3A5E90065E742 /* LaunchScreen.storyboard in Resources */,
+				80BB00EE28E3A5E90065E742 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80BB00F728E3A5E90065E742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80BB00DA28E3A5E60065E742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B7017928EB73F800027760 /* ListViewController.m in Sources */,
+				80BB012528E3B2FE0065E742 /* AppFactory.m in Sources */,
+				80B7017F28EB8C1600027760 /* ListsViewModel.m in Sources */,
+				80B7018528EB903F00027760 /* FilmsRepository.m in Sources */,
+				80BB012928E4AEC30065E742 /* MenuViewController.m in Sources */,
+				80B7015E28E61E4B00027760 /* StatusRequest.m in Sources */,
+				80B7016A28E791DE00027760 /* MenuRepository.m in Sources */,
+				80BB00E328E3A5E60065E742 /* AppDelegate.m in Sources */,
+				80BB00F428E3A5E90065E742 /* main.m in Sources */,
+				80B7018C28EC866900027760 /* SpeciesRepository.m in Sources */,
+				80BB00E628E3A5E60065E742 /* SceneDelegate.m in Sources */,
+				80BB012C28E4B1390065E742 /* MenuViewCell.m in Sources */,
+				80B7019328EC8EBE00027760 /* ListItem.m in Sources */,
+				80B7018228EB8FC700027760 /* ListLoadDataUseCase.m in Sources */,
+				80B7015828E61A9700027760 /* MenuViewModel.m in Sources */,
+				80BB012128E3AD8C0065E742 /* HomeViewController.m in Sources */,
+				80B7017C28EB8BD800027760 /* ListViewCell.m in Sources */,
+				80BB013128E502010065E742 /* ApiClient.m in Sources */,
+				80B7017128E79F5200027760 /* MenuData.m in Sources */,
+				80B7016D28E7993800027760 /* MenuLoadDataUseCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80BB00F528E3A5E90065E742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB00FE28E3A5E90065E742 /* PokeOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80BB00FB28E3A5E90065E742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80BB00DD28E3A5E60065E742 /* StarWarsOC */;
+			targetProxy = 80BB00FA28E3A5E90065E742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80BB00EF28E3A5E90065E742 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BB00F028E3A5E90065E742 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80BB010B28E3A5EA0065E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80BB010C28E3A5EA0065E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80BB010E28E3A5EA0065E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YQVG9TAF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BB010F28E3A5EA0065E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YQVG9TAF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80BB011128E3A5EA0065E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YQVG9TAF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsOC";
+			};
+			name = Debug;
+		};
+		80BB011228E3A5EA0065E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YQVG9TAF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsOC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80BB00D928E3A5E60065E742 /* Build configuration list for PBXProject "StarWarsOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BB010B28E3A5EA0065E742 /* Debug */,
+				80BB010C28E3A5EA0065E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BB010D28E3A5EA0065E742 /* Build configuration list for PBXNativeTarget "StarWarsOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BB010E28E3A5EA0065E742 /* Debug */,
+				80BB010F28E3A5EA0065E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BB011028E3A5EA0065E742 /* Build configuration list for PBXNativeTarget "StarWarsOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BB011128E3A5EA0065E742 /* Debug */,
+				80BB011228E3A5EA0065E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80BB00D628E3A5E60065E742 /* Project object */;
+}
