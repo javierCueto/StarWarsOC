@@ -12,6 +12,7 @@
 
 @interface MenuViewController ()
 @property (nonatomic, strong) MenuViewModel* viewModel;
+@property (nonatomic, strong) UIActivityIndicatorView* spinner;
 @end
 
 @implementation MenuViewController
@@ -31,16 +32,21 @@ static NSString * const reuseIdentifier = @"Cell";
     self.title = @"Star Wars";
     [_viewModel loadData];
     UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
-                                     style:UIBarButtonItemStylePlain
-                                    target:self
-                                    action:@selector(showPicker)];
+                                                               style:UIBarButtonItemStylePlain
+                                                              target:self
+                                                              action:@selector(showPicker)];
     [self.navigationItem setRightBarButtonItem:button animated:YES];
     
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    [self.view addSubview:self.spinner];
+    self.spinner.translatesAutoresizingMaskIntoConstraints = false;
+    [self.spinner.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
+    [self.spinner.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [self.spinner startAnimating];
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
     [super viewDidAppear:animated];
-    //[_viewModel removeObserver: self forKeyPath:@"status"];
 }
 
 - (void)  showPicker{
@@ -49,15 +55,20 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"status"]) {
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.collectionView reloadData];
+            
+            NSNumber *statusNumber = [object valueForKey:@"status"];
+            if (statusNumber.integerValue == success){
+                [self.spinner removeFromSuperview];
+                [self.collectionView reloadData];
+            }else {
+                
+            }
         });
         
     }
 }
-
-
-#pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
