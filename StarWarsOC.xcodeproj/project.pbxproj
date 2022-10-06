@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		809E47A128EE39A600E2CA5F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809E47A028EE39A600E2CA5F /* Test.swift */; };
+		802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802793E128EF2C51004070F6 /* SettingsViewController.swift */; };
 		80B7015828E61A9700027760 /* MenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015728E61A9700027760 /* MenuViewModel.m */; };
 		80B7015E28E61E4B00027760 /* StatusRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015D28E61E4B00027760 /* StatusRequest.m */; };
 		80B7016A28E791DE00027760 /* MenuRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7016928E791DE00027760 /* MenuRepository.m */; };
@@ -44,7 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		809E47A028EE39A600E2CA5F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		802793E028EF2C51004070F6 /* StarWarsOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWarsOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		802793E128EF2C51004070F6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		80B7015628E61A9700027760 /* MenuViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewModel.h; sourceTree = "<group>"; };
 		80B7015728E61A9700027760 /* MenuViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewModel.m; sourceTree = "<group>"; };
 		80B7015C28E61E4B00027760 /* StatusRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusRequest.h; sourceTree = "<group>"; };
@@ -111,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802793DF28EF2C2D004070F6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				802793E128EF2C51004070F6 /* SettingsViewController.swift */,
+				802793E028EF2C51004070F6 /* StarWarsOC-Bridging-Header.h */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		80B7015428E61A6500027760 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +130,6 @@
 				80BB012B28E4B1390065E742 /* MenuViewCell.m */,
 				80B7015628E61A9700027760 /* MenuViewModel.h */,
 				80B7015728E61A9700027760 /* MenuViewModel.m */,
-				809E47A028EE39A600E2CA5F /* Test.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -297,6 +306,7 @@
 		80BB011728E3A7320065E742 /* ScreenModules */ = {
 			isa = PBXGroup;
 			children = (
+				802793DF28EF2C2D004070F6 /* Settings */,
 				80B7019D28EC910C00027760 /* Planets */,
 				80B7019C28EC90FA00027760 /* Vehicles */,
 				80B7019828EC901E00027760 /* Starships */,
@@ -498,6 +508,7 @@
 			files = (
 				80B7017928EB73F800027760 /* ListViewController.m in Sources */,
 				80BB012528E3B2FE0065E742 /* AppFactory.m in Sources */,
+				802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */,
 				80B7017F28EB8C1600027760 /* ListsViewModel.m in Sources */,
 				80B7018528EB903F00027760 /* FilmsRepository.m in Sources */,
 				80BB012928E4AEC30065E742 /* MenuViewController.m in Sources */,
@@ -513,7 +524,6 @@
 				80B7015828E61A9700027760 /* MenuViewModel.m in Sources */,
 				80BB012128E3AD8C0065E742 /* HomeViewController.m in Sources */,
 				80B7017C28EB8BD800027760 /* ListViewCell.m in Sources */,
-				809E47A128EE39A600E2CA5F /* Test.swift in Sources */,
 				80BB013128E502010065E742 /* ApiClient.m in Sources */,
 				80B7017128E79F5200027760 /* MenuData.m in Sources */,
 				80B7016D28E7993800027760 /* MenuLoadDataUseCase.m in Sources */,
@@ -684,6 +694,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StarWarsOC/App/ScreenModules/Settings/StarWarsOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,6 +725,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josejavier.PokeOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StarWarsOC/App/ScreenModules/Settings/StarWarsOC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

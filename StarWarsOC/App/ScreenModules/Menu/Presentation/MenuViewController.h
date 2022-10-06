@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MenuViewControllerDelegate <NSObject>
 - (void) didMenuItemSelected:(MenuData *) menuData;
+- (void) didSelectSetting;
 @end
 
 @interface MenuViewController: UICollectionViewController

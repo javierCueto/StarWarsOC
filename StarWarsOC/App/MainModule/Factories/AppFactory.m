@@ -15,6 +15,7 @@
 #import "ListViewModel.h"
 #import "FilmsRepository.h"
 #import "SpeciesRepository.h"
+#import "StarWarsOC-Swift.h"
 
 @implementation AppFactory
 
@@ -43,6 +44,11 @@
     }
 }
 
+- (void)didSelectSetting {
+    [self makeSettingsModule];
+}
+
+
 
 - (void)makeFilmModule:(nonnull NSString *)urlPath{
     ApiClient *apiClient=[[ApiClient alloc] initWithSession:NSURLSession.sharedSession];
@@ -53,6 +59,16 @@
     [self.navController pushViewController:viewController animated:YES];
 }
 
+- (void)makeSettingsModule {
+    SettingsViewController *viewController = [[SettingsViewController alloc] initWithDelegate:self];
+   
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self.navController presentViewController:nav animated:true completion:nil];
+}
+
+
 - (void)makeListModule:(nonnull NSString *)urlPath{
     ApiClient *apiClient=[[ApiClient alloc] initWithSession:NSURLSession.sharedSession];
     SpeciesRepository *speciesRepository=[[SpeciesRepository alloc] initWithApiClient:apiClient withURLPath:urlPath];
@@ -61,5 +77,10 @@
     ListViewController *viewController = [[ListViewController alloc] initWithViewModel:viewModel];
     [self.navController pushViewController:viewController animated:YES];
 }
+
+- (void)didFinish {
+    [self.navController dismissViewControllerAnimated:true completion:nil];
+}
+
 
 @end

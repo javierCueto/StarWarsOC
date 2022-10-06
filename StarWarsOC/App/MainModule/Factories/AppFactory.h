@@ -7,7 +7,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MenuViewController.h"
-@interface AppFactory : NSObject <MenuViewControllerDelegate>
+#import "StarWarsOC-Swift.h"
+@interface AppFactory : NSObject <MenuViewControllerDelegate, SettingsViewControllerDelegate>
 - (void) start: (UIWindow*_Nonnull) window;
 @property (nonatomic, strong) UINavigationController * _Nonnull navController;
 @end

@@ -8,7 +8,7 @@
 #import "MenuViewController.h"
 #import "MenuViewCell.h"
 #import "MenuViewModel.h"
-#import "StarWarsOC-Swift.h"
+
 
 @interface MenuViewController ()
 @property (nonatomic, strong) MenuViewModel* viewModel;
@@ -30,13 +30,21 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[MenuViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     self.title = @"Star Wars";
     [_viewModel loadData];
-    Test *test = [ Test new];
-    [test testing];
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
+                                     style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(showPicker)];
+    [self.navigationItem setRightBarButtonItem:button animated:YES];
+    
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
     [super viewDidAppear:animated];
     //[_viewModel removeObserver: self forKeyPath:@"status"];
+}
+
+- (void)  showPicker{
+    [self.delegate didSelectSetting];
 }
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
