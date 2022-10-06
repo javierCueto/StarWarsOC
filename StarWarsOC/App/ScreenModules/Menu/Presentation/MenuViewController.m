@@ -8,6 +8,7 @@
 #import "MenuViewController.h"
 #import "MenuViewCell.h"
 #import "MenuViewModel.h"
+#import "StarWarsOC-Swift.h"
 
 @interface MenuViewController ()
 @property (nonatomic, strong) MenuViewModel* viewModel;
@@ -29,6 +30,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[MenuViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     self.title = @"Star Wars";
     [_viewModel loadData];
+    Test *test = [ Test new];
+    [test testing];
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
