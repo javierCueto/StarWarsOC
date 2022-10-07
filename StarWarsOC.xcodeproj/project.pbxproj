@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802793E128EF2C51004070F6 /* SettingsViewController.swift */; };
+		802793E728F095A1004070F6 /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 802793E628F095A1004070F6 /* Printer.m */; };
 		80B7015828E61A9700027760 /* MenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015728E61A9700027760 /* MenuViewModel.m */; };
 		80B7015E28E61E4B00027760 /* StatusRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015D28E61E4B00027760 /* StatusRequest.m */; };
 		80B7016A28E791DE00027760 /* MenuRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7016928E791DE00027760 /* MenuRepository.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		802793E028EF2C51004070F6 /* StarWarsOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWarsOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		802793E128EF2C51004070F6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		802793E528F095A1004070F6 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		802793E628F095A1004070F6 /* Printer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
 		80B7015628E61A9700027760 /* MenuViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewModel.h; sourceTree = "<group>"; };
 		80B7015728E61A9700027760 /* MenuViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewModel.m; sourceTree = "<group>"; };
 		80B7015C28E61E4B00027760 /* StatusRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusRequest.h; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 				80B7018D28EC876D00027760 /* Protocols */,
 				80B7016E28E79F3B00027760 /* Model */,
 				80B7016628E7919100027760 /* StatusRequest */,
+				802793E528F095A1004070F6 /* Printer.h */,
+				802793E628F095A1004070F6 /* Printer.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802793E728F095A1004070F6 /* Printer.m in Sources */,
 				80B7017928EB73F800027760 /* ListViewController.m in Sources */,
 				80BB012528E3B2FE0065E742 /* AppFactory.m in Sources */,
 				802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */,

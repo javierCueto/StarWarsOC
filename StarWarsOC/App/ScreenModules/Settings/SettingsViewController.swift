@@ -21,26 +21,32 @@ final class SettingsViewController: UIViewController {
     // MARK: Pivate Properties
     
     // MARK: Life Cycle
-     init(delegate: SettingsViewControllerDelegate?) {
+    init(delegate: SettingsViewControllerDelegate?) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
-         title = "Hello World"
-         navigationItem.leftBarButtonItem = UIBarButtonItem(image: .remove, style: .done, target: self, action: #selector(closeView))
+        title = "Hello World"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: .remove, style: .done, target: self, action: #selector(closeView))
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-     override func viewDidLoad() {
-         view.backgroundColor = .white
+    override func viewDidLoad() {
+        view.backgroundColor = .white
         title = "Settings"
+        callClassObjc()
     }
     
     // MARK: Helpers
     @objc
     private func closeView() {
         delegate?.didFinish()
+    }
+    
+    private func callClassObjc() {
+        let printer = Printer()
+        printer.print("Executing code Objc from swift");
     }
     
     // MARK: Extensions
