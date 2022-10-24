@@ -38,4 +38,12 @@
     ListItem *data = (ListItem *)self.arrayData[index];
     return  data;
 }
+
+- (NSString*)getURL: (NSInteger) index {
+    
+    ListItem *data = (ListItem *)self.arrayData[index];
+    NSLog(@"%@",data.title);
+    NSLog(@"%@",data.opening);
+    return  data.urlPath;
+}
 @end

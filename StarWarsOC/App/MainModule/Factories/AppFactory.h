@@ -8,7 +8,9 @@
 #import <UIKit/UIKit.h>
 #import "MenuViewController.h"
 #import "StarWarsOC-Swift.h"
-@interface AppFactory : NSObject <MenuViewControllerDelegate, SettingsViewControllerDelegate>
+#import "ListViewController.h"
+
+@interface AppFactory : NSObject <MenuViewControllerDelegate, SettingsViewControllerDelegate, ListViewControllerDelegate>
 - (void) start: (UIWindow*_Nonnull) window;
 @property (nonatomic, strong) UINavigationController * _Nonnull navController;
 @end

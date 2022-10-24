@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString *director;
 @property (strong, nonatomic) NSString *producer;
 @property (strong, nonatomic) NSString *releaseDate;
+@property (strong, nonatomic) NSString *urlPath;
 @end
 
 NS_ASSUME_NONNULL_END

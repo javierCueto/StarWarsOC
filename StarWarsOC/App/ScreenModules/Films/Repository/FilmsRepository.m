@@ -38,6 +38,7 @@
             film.director = obj[@"director"];
             film.producer = obj[@"producer"];
             film.releaseDate = obj[@"release_date"];
+            film.urlPath = obj[@"url"];
             [arrayData addObject:film];
 
         }];

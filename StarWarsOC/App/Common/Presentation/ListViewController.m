@@ -16,6 +16,7 @@
 
 @implementation ListViewController
 static NSString * const reuseIdentifier = @"CellTable";
+
 - (instancetype) initWithViewModel:(ListViewModel*) viewModel {
     self = [super init];
     _viewModel = viewModel;
@@ -28,10 +29,10 @@ static NSString * const reuseIdentifier = @"CellTable";
     [self.viewModel viewDidLoad];
     [self.tableView registerClass:[ListViewCell class] forCellReuseIdentifier:reuseIdentifier];
     self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
-    [self.view addSubview:self.spinner];
+    [self.navigationController.view addSubview:self.spinner];
     self.spinner.translatesAutoresizingMaskIntoConstraints = false;
-    [self.spinner.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
-    [self.spinner.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [self.spinner.centerYAnchor constraintEqualToAnchor:self.navigationController.view.centerYAnchor].active = YES;
+    [self.spinner.centerXAnchor constraintEqualToAnchor:self.navigationController.view.centerXAnchor].active = YES;
     [self.spinner startAnimating];
 }
 
@@ -75,6 +76,12 @@ static NSString * const reuseIdentifier = @"CellTable";
 - (void)dealloc
 {
     [_viewModel removeObserver:self forKeyPath:@"status"];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *url = [self.viewModel getURL:indexPath.row];
+    NSLog(@"%@",url);
+    [self.delegate didItemWasSelected:url];
 }
 
 @end

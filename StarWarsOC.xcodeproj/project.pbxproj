@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451FB7E12907184E00422477 /* DetailFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7E02907184E00422477 /* DetailFilmViewController.m */; };
 		802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802793E128EF2C51004070F6 /* SettingsViewController.swift */; };
 		802793E728F095A1004070F6 /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 802793E628F095A1004070F6 /* Printer.m */; };
 		80B7015828E61A9700027760 /* MenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015728E61A9700027760 /* MenuViewModel.m */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451FB7DF2907184E00422477 /* DetailFilmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailFilmViewController.h; sourceTree = "<group>"; };
+		451FB7E02907184E00422477 /* DetailFilmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailFilmViewController.m; sourceTree = "<group>"; };
 		802793E028EF2C51004070F6 /* StarWarsOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWarsOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		802793E128EF2C51004070F6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		802793E528F095A1004070F6 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
@@ -115,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451FB7DD2907181800422477 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				451FB7DE2907182100422477 /* DetailFilm */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		451FB7DE2907182100422477 /* DetailFilm */ = {
+			isa = PBXGroup;
+			children = (
+				451FB7DF2907184E00422477 /* DetailFilmViewController.h */,
+				451FB7E02907184E00422477 /* DetailFilmViewController.m */,
+			);
+			path = DetailFilm;
+			sourceTree = "<group>";
+		};
 		802793DF28EF2C2D004070F6 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +329,7 @@
 		80BB011728E3A7320065E742 /* ScreenModules */ = {
 			isa = PBXGroup;
 			children = (
+				451FB7DD2907181800422477 /* Details */,
 				802793DF28EF2C2D004070F6 /* Settings */,
 				80B7019D28EC910C00027760 /* Planets */,
 				80B7019C28EC90FA00027760 /* Vehicles */,
@@ -511,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451FB7E12907184E00422477 /* DetailFilmViewController.m in Sources */,
 				802793E728F095A1004070F6 /* Printer.m in Sources */,
 				80B7017928EB73F800027760 /* ListViewController.m in Sources */,
 				80BB012528E3B2FE0065E742 /* AppFactory.m in Sources */,

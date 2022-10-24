@@ -38,6 +38,7 @@
             specie.director = obj[@"director"];
             specie.producer = obj[@"producer"];
             specie.releaseDate = obj[@"release_date"];
+            specie.urlPath = obj[@"url"];
             [arrayData addObject:specie];
 
         }];

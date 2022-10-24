@@ -17,4 +17,5 @@
 - (instancetype) initWithListLoadDataUseCase:(ListLoadDataUseCase*)listLoadDataUseCase;
 @property (nonatomic, assign) NSInteger count;
 - (ListItem*)getListData: (NSInteger) index;
+- (NSString*)getURL: (NSInteger) index;
 @end

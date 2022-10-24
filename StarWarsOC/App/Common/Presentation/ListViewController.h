@@ -10,8 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+@protocol ListViewControllerDelegate <NSObject>
+- (void) didItemWasSelected:(NSString*) urlPath;
+@end
+
 @interface ListViewController : UITableViewController
 - (instancetype) initWithViewModel:(ListViewModel*) viewModel;
+@property (nonatomic, weak) id <ListViewControllerDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

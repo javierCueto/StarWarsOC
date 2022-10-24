@@ -16,6 +16,7 @@
 #import "FilmsRepository.h"
 #import "SpeciesRepository.h"
 #import "StarWarsOC-Swift.h"
+#import "DetailFilmViewController.h"
 
 @implementation AppFactory
 
@@ -56,6 +57,7 @@
     ListLoadDataUseCase *filmsLoadDataUseCase=[[ListLoadDataUseCase alloc] initWithFetchRepository:filmsRepository];
     ListViewModel *viewModel=[[ListViewModel alloc] initWithListLoadDataUseCase:filmsLoadDataUseCase];
     ListViewController *viewController = [[ListViewController alloc] initWithViewModel:viewModel];
+    viewController.delegate = self;
     [self.navController pushViewController:viewController animated:YES];
 }
 
@@ -82,5 +84,11 @@
     [self.navController dismissViewControllerAnimated:true completion:nil];
 }
 
+
+- (void) didItemWasSelected:(NSString*) urlPath {
+    DetailFilmViewController *viewController = [[DetailFilmViewController alloc] init];
+    viewController.title = @"Film";
+    [self.navController pushViewController:viewController animated:YES];
+}
 
 @end
