@@ -10,6 +10,7 @@
 
 @interface DetailFilmViewController ()
 @property (nonatomic, strong) DetailFilmViewModel* viewModel;
+@property (nonatomic, strong) UIImageView *posterImage;
 @end
 
 @implementation DetailFilmViewController
@@ -24,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configUI];
+    [self configConstraints];
     [self.viewModel viewDidLoad];
 }
 
@@ -49,7 +51,22 @@
 
 - (void) configData {
     self.title = self.viewModel.getTitle;
+    self.posterImage.image = [UIImage imageNamed:self.viewModel.getTitle];
 }
+
+- (void) configConstraints {
+    self.posterImage = [[UIImageView alloc] init];
+    self.posterImage.translatesAutoresizingMaskIntoConstraints = false;
+    self.posterImage.contentMode = UIViewContentModeScaleToFill;
+    self.posterImage.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.posterImage];
+    [self.posterImage.topAnchor constraintEqualToAnchor: self.view.safeAreaLayoutGuide.topAnchor ].active = YES;
+    [self.posterImage.leadingAnchor constraintEqualToAnchor: self.view.leadingAnchor ].active = YES;
+    [self.posterImage.trailingAnchor constraintEqualToAnchor: self.view.trailingAnchor  ].active = YES;
+    [self.posterImage.heightAnchor constraintEqualToConstant:200].active = true;
+    self.posterImage.image = [UIImage imageNamed:@"starWars"];
+}
+
 
 
 @end

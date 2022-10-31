@@ -7,9 +7,11 @@
 
 #import "DetailFilmViewModel.h"
 #import "FilmLoadDataUseCase.h"
+#import "ListItem.h"
 
 
 @interface DetailFilmViewModel ()
+@property (nonatomic, strong) ListItem* film;
 @property (nonatomic, strong) FilmLoadDataUseCase* filmLoadDataUseCase;
 @end
 
@@ -25,16 +27,27 @@
 
 - (void)viewDidLoad {
     [self setStatus:loading];
-    [self setStatus:success];
-    [self.filmLoadDataUseCase getFilm:^(NSMutableArray * arrayData) {
-        [self setStatus:success];
-        self.arrayData = arrayData;
+    [self.filmLoadDataUseCase getFilm:^(ListItem * film) {
+        self.film = film;
         [self setStatus:success];
     }];
 }
 
 - (NSString*)getTitle {
-    return @"Star wars 1";
+    return self.film.title;
 }
 
+- (NSString*)getDescription {
+    return self.film.opening;
+
+}
+
+- (NSString*)getDirector {
+    return self.film.director;
+
+}
+
+- (NSString*)getProducer {
+    return self.film.producer;
+}
 @end

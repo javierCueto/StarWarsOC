@@ -10,7 +10,7 @@
 		451FB7E12907184E00422477 /* DetailFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7E02907184E00422477 /* DetailFilmViewController.m */; };
 		451FB7E529101C7F00422477 /* DetailFilmViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7E429101C7F00422477 /* DetailFilmViewModel.m */; };
 		451FB7E9291023D300422477 /* FilmLoadDataUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7E8291023D300422477 /* FilmLoadDataUseCase.m */; };
-		451FB7ED2910241C00422477 /* FilmRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7EC2910241C00422477 /* FilmRepository.m */; };
+		451FB7ED2910241C00422477 /* DetailFilmRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 451FB7EC2910241C00422477 /* DetailFilmRepository.m */; };
 		802793E228EF2C51004070F6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802793E128EF2C51004070F6 /* SettingsViewController.swift */; };
 		802793E728F095A1004070F6 /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 802793E628F095A1004070F6 /* Printer.m */; };
 		80B7015828E61A9700027760 /* MenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B7015728E61A9700027760 /* MenuViewModel.m */; };
@@ -55,8 +55,8 @@
 		451FB7E429101C7F00422477 /* DetailFilmViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailFilmViewModel.m; sourceTree = "<group>"; };
 		451FB7E7291023D300422477 /* FilmLoadDataUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmLoadDataUseCase.h; sourceTree = "<group>"; };
 		451FB7E8291023D300422477 /* FilmLoadDataUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmLoadDataUseCase.m; sourceTree = "<group>"; };
-		451FB7EB2910241C00422477 /* FilmRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmRepository.h; sourceTree = "<group>"; };
-		451FB7EC2910241C00422477 /* FilmRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmRepository.m; sourceTree = "<group>"; };
+		451FB7EB2910241C00422477 /* DetailFilmRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailFilmRepository.h; sourceTree = "<group>"; };
+		451FB7EC2910241C00422477 /* DetailFilmRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailFilmRepository.m; sourceTree = "<group>"; };
 		802793E028EF2C51004070F6 /* StarWarsOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWarsOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		802793E128EF2C51004070F6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		802793E528F095A1004070F6 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 		451FB7EA2910240D00422477 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				451FB7EB2910241C00422477 /* FilmRepository.h */,
-				451FB7EC2910241C00422477 /* FilmRepository.m */,
+				451FB7EB2910241C00422477 /* DetailFilmRepository.h */,
+				451FB7EC2910241C00422477 /* DetailFilmRepository.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -580,7 +580,7 @@
 				80B7018528EB903F00027760 /* FilmsRepository.m in Sources */,
 				80BB012928E4AEC30065E742 /* MenuViewController.m in Sources */,
 				80B7015E28E61E4B00027760 /* StatusRequest.m in Sources */,
-				451FB7ED2910241C00422477 /* FilmRepository.m in Sources */,
+				451FB7ED2910241C00422477 /* DetailFilmRepository.m in Sources */,
 				80B7016A28E791DE00027760 /* MenuRepository.m in Sources */,
 				80BB00E328E3A5E60065E742 /* AppDelegate.m in Sources */,
 				80BB00F428E3A5E90065E742 /* main.m in Sources */,

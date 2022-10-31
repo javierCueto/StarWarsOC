@@ -9,14 +9,14 @@
 
 
 @interface FilmLoadDataUseCase ()
-@property (nonatomic, strong) FilmRepository* filmRepository;
+@property (nonatomic, strong) DetailFilmRepository* filmRepository;
 @end
 
 
 @implementation FilmLoadDataUseCase
 
 
-- (instancetype) initWithFilmRepository:(FilmRepository*)filmRepository{
+- (instancetype) initWithFilmRepository:(DetailFilmRepository*)filmRepository{
     self = [self init];
     if (self) {
         _filmRepository = filmRepository;
@@ -24,7 +24,11 @@
     return  self;
 }
 
-- (void)getFilm: (void(^)(NSMutableArray *arrayData))getFilm {
+- (void)getFilm: (void(^)(ListItem *film))getFilm {
     
+    [self.filmRepository fetchData:^(ListItem * _Nonnull film) {
+        getFilm(film);
+    } ];
+
 }
 @end

@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FilmRepository.h"
+#import "DetailFilmRepository.h"
+#import "ListItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FilmLoadDataUseCase : NSObject
-- (instancetype) initWithFilmRepository:(FilmRepository*)filmRepository;
-- (void)getFilm: (void(^)(NSMutableArray *arrayData))getFilm;
+- (instancetype) initWithFilmRepository:(DetailFilmRepository*)filmRepository;
+- (void)getFilm: (void(^)(ListItem *film))getFilm;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,8 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) initWithFilmLoadDataUseCase:(FilmLoadDataUseCase*)filmLoadDataUseCase;
 @property (nonatomic, assign) StatusRequest status;
 - (void)viewDidLoad;
-@property (nonatomic, strong) NSMutableArray *arrayData;
 - (NSString*)getTitle;
+- (NSString*)getDescription;
+- (NSString*)getDirector;
+- (NSString*)getProducer;
 @end
 
 NS_ASSUME_NONNULL_END
