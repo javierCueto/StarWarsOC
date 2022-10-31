@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*)getTitle;
 - (NSString*)getDescription;
 - (NSString*)getDirector;
-- (NSString*)getProducer;
 @end
 
 NS_ASSUME_NONNULL_END

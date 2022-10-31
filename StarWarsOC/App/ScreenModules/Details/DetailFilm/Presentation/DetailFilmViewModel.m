@@ -47,7 +47,4 @@
 
 }
 
-- (NSString*)getProducer {
-    return self.film.producer;
-}
 @end
