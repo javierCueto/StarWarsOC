@@ -46,12 +46,13 @@
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"status"]) {
         
+        __weak __typeof__(self) weakSelf = self;
         dispatch_async(dispatch_get_main_queue(), ^{
             
             NSNumber *statusNumber = [object valueForKey:@"status"];
             if (statusNumber.integerValue == success){
-                [self configData];
-                [self.spinner removeFromSuperview];
+                [weakSelf configData];
+                [weakSelf.spinner removeFromSuperview];
             }else {
                 
             }
