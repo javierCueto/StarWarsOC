@@ -88,10 +88,9 @@
 
 - (void) didItemWasSelected:(NSString*) urlPath {
     ApiClient *apiClient=[[ApiClient alloc] initWithSession:NSURLSession.sharedSession];
-    
-    DetailFilmRepository *filmRepository=[[DetailFilmRepository alloc] initWithApiClient:apiClient withURLPath:urlPath];
-    FilmLoadDataUseCase *filmsLoadDataUseCase=[[FilmLoadDataUseCase alloc] initWithFilmRepository:filmRepository];
-    DetailFilmViewModel *viewModel=[[DetailFilmViewModel alloc] initWithFilmLoadDataUseCase:filmsLoadDataUseCase];
+    DetailFilmRepository *filmRepository = [[DetailFilmRepository alloc] initWithApiClient:apiClient withURLPath:urlPath];
+    FilmLoadDataUseCase *filmsLoadDataUseCase = [[FilmLoadDataUseCase alloc] initWithFilmRepository:filmRepository];
+    DetailFilmViewModel *viewModel = [[DetailFilmViewModel alloc] initWithFilmLoadDataUseCase:filmsLoadDataUseCase];
     DetailFilmViewController *viewController = [[DetailFilmViewController alloc] initWithViewModel:viewModel];
     viewController.title = @"Film";
     UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:viewController];

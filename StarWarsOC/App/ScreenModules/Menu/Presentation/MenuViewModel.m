@@ -31,11 +31,9 @@
     [self setStatus:loading];
     
     [self.menuLoadDataUseCase getMenu:^(NSMutableArray * arrayData) {
-        [self setStatus:success];
         [self setCount:arrayData.count];
         self.arrayData = arrayData;
         [self setStatus:success];
-        
     }];
     
 }
