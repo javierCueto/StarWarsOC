@@ -6,11 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailFilmViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailFilmViewController : UIViewController
-
+- (instancetype) initWithViewModel:(DetailFilmViewModel*) viewModel;
 @end
 
 NS_ASSUME_NONNULL_END

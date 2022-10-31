@@ -17,6 +17,7 @@
 #import "SpeciesRepository.h"
 #import "StarWarsOC-Swift.h"
 #import "DetailFilmViewController.h"
+#import "FilmRepository.h"
 
 @implementation AppFactory
 
@@ -86,7 +87,10 @@
 
 
 - (void) didItemWasSelected:(NSString*) urlPath {
-    DetailFilmViewController *viewController = [[DetailFilmViewController alloc] init];
+    FilmRepository *filmRepository=[[FilmRepository alloc] init];
+    FilmLoadDataUseCase *filmsLoadDataUseCase=[[FilmLoadDataUseCase alloc] initWithFilmRepository:filmRepository];
+    DetailFilmViewModel *viewModel=[[DetailFilmViewModel alloc] initWithFilmLoadDataUseCase:filmsLoadDataUseCase];
+    DetailFilmViewController *viewController = [[DetailFilmViewController alloc] initWithViewModel:viewModel];
     viewController.title = @"Film";
     [self.navController pushViewController:viewController animated:YES];
 }
